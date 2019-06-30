@@ -45,7 +45,7 @@ for i in range(3,487):
         periods=(i-2)//2+1
     else:
         periods=i//2
-    response = requests.get('http://aligulac.com/periods/'+str(i)+'/')
+    response = requests.get('http://aligulac.com/periods/'+str(periods)+'/')
     soup = BeautifulSoup(response.text,"html.parser")
     z = soup.find_all('div',attrs={'class':'col-lg-12 col-md-12 col-sm-12 col-xs-12'})
     month = str(z[0].find_all('h2')).split(':')[1].strip().split(' ')[0]
