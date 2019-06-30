@@ -38,7 +38,7 @@ for i in range(start,end):
     data[i][2]=race
     print('The nation and race of '+str(i)+' has reached')
 
-for i in range(3,487):
+for i in range(3,489):
     if(i==3):
         periods=1
     elif(i%2==1):
