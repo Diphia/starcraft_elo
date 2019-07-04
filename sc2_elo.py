@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 
 start = 1
-end = 10
+end = 10000
 datapl= [[] for i in range(start,end)] 
 
 data = [[0 for col in range(510)] for row in range(start,end+1)]
@@ -72,4 +72,4 @@ for i in range(start,end):
 
 
 df = pd.DataFrame(data)
-df.to_csv('./before10.csv',index=False,encoding='utf-8')
+df.to_csv('./before10k.csv',index=False,encoding='utf-8')
